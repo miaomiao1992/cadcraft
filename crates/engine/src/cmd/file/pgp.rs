@@ -13,6 +13,7 @@ use std::sync::{Mutex, MutexGuard, OnceLock, PoisonError};
 use serde_json::{Value, json};
 
 use super::super::helpers::support_text;
+use super::super::{always, find_command};
 use super::*;
 
 /// Most user aliases held.
