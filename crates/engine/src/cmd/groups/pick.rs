@@ -9,8 +9,8 @@ use serde_json::{Value, json};
 
 use super::super::{CommandSpec, bad};
 
+use super::super::always;
 use crate::{Accept, Input, Interactive, Prompt, Result, Session, Step};
-use super::super::{always};
 
 pub fn specs() -> Vec<CommandSpec> {
     vec![

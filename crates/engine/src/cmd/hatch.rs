@@ -17,9 +17,9 @@ use crate::{Accept, EngineError, Input, Interactive, Picker, Prompt, Result, Ses
 mod assoc;
 mod edit;
 mod pick;
+use super::has_doc;
 pub(crate) use assoc::update as refill_associative;
 pub use pick::{HatchPicks, PickMode};
-use super::{has_doc};
 
 pub fn specs() -> Vec<CommandSpec> {
     vec![
