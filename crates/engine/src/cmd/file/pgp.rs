@@ -14,6 +14,7 @@ use serde_json::{Value, json};
 
 use super::super::helpers::support_text;
 use super::{CommandSpec, Result, Session, bad, bool_or, find_command};
+use super::super::{always};
 
 /// Most user aliases held.
 pub const MAX_ALIASES: usize = 10_000;
