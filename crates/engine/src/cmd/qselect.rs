@@ -321,9 +321,8 @@ fn run_info(s: &mut Session, p: &Value) -> Result<Value> {
 
 #[cfg(test)]
 mod tests {
+    use super::*;
     use serde_json::json;
-
-    use super::{CommandSpec, bad, str_param};
 
     fn session() -> Session {
         let mut s = Session::new();

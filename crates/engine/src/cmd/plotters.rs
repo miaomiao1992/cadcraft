@@ -14,7 +14,7 @@ use cadcraft_doc::{DevicePaper, Orientation, PageSetup, PlotOutput, PlotterConfi
 use cadcraft_geom::{Bounds2, Vec2};
 use serde_json::{Value, json};
 
-use super::{CommandSpec, Result, bad, point_req, str_param};
+use super::{CommandSpec, Result, always, bad, has_doc, point_req, str_param};
 
 use crate::{Accept, EngineError, Input, Interactive, Prompt, Session, Step};
 
