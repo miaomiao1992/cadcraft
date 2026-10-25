@@ -10,6 +10,7 @@ use super::super::bad;
 
 use super::{SelfCheck, area_of, object_area};
 use crate::{Result, Session};
+use super::super::{point_value};
 
 const CMD: &str = "shapes";
 
