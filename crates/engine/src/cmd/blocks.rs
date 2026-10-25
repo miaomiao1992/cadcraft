@@ -15,6 +15,7 @@ use super::machines::{SelOutcome, SelectPhase, number};
 use super::{CommandSpec, bad, bool_or, f64_or, find_command, ok, point_param, point_req, point_value, str_param, targets};
 
 use crate::{Accept, EngineError, Input, Interactive, Prompt, Result, Session, Step};
+use super::{has_doc};
 
 mod attedit;
 mod burst;

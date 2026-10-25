@@ -10,9 +10,11 @@ use cadcraft_geom::{Line, Vec2, line_line_infinite};
 use serde_json::{Value, json};
 
 use super::curves::{self, MAX_GEN};
-use super::machines::number;
+use super::super::machines::number;
+use super::super::ok;
 use super::*;
 use crate::{Accept, EngineError, Input, Interactive, Prompt, Result, Session, Step};
+use super::super::{distinct_points};
 
 pub fn specs() -> Vec<CommandSpec> {
     vec![

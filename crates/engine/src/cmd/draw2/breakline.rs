@@ -11,7 +11,7 @@ use serde_json::Value;
 
 use super::added;
 use super::curves::MAX_GEN;
-use super::machines::number;
+use super::super::machines::number;
 use super::*;
 use crate::cmd::modify2::as_lwpoly;
 use crate::{Accept, EngineError, Input, Interactive, Prompt, Result, Session, Step};
