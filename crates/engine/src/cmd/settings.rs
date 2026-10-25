@@ -2,7 +2,7 @@
 
 use serde_json::{Value, json};
 
-use super::{CommandSpec, bad, point_param, str_param};
+use super::{CommandSpec, always, bad, point_param, str_param};
 
 use crate::{Accept, Input, Interactive, Prompt, Result, Session, Step};
 
