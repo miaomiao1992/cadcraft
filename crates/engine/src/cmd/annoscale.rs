@@ -7,7 +7,7 @@ use cadcraft_doc::{AnnoScale, Drawing, EntityKind, Handle, MAX_SCALES, is_annota
 use serde_json::{Value, json};
 
 use super::machines::{SelOutcome, SelectPhase, SelectRun};
-use super::{CommandSpec, bad, f64_req, ok, targets};
+use super::{CommandSpec, bad, f64_req, targets};
 
 use crate::{Accept, Input, Interactive, Prompt, Result, Session, Step};
 

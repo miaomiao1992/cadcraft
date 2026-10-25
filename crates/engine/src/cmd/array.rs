@@ -1172,7 +1172,7 @@ impl Interactive for PolarM {
 
 #[cfg(test)]
 mod tests {
-    use super::{CommandSpec, bad, bool_or, f64_or, find_command, point_param, point_req, str_param, targets};
+    use super::*;
 
     fn polar(n: u32, fill: f64) -> ArrayParams {
         let kind = ArrayKind::Polar(PolarArray { center: -Vec2::X, items: n, fill, rotate: true, rows: 1, row_spacing: 0.0, row_elevation: 0.0 });

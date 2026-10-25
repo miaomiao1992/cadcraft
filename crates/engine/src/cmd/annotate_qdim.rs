@@ -6,8 +6,9 @@ use cadcraft_doc::{DimKind, EntityKind, Handle, Prim};
 use cadcraft_geom::{Segment, Vec2};
 use serde_json::{Value, json};
 
-use super::machines::{SelOutcome, SelectPhase};
-use super::{bad, key, point_param, point_req, points_param, str_param, targets};
+use super::super::machines::{SelOutcome, SelectPhase};
+use super::super::{bad, point_param, point_req, points_param, str_param, targets};
+use super::{MAX_CHAIN, assoc_enabled, dim};
 
 use crate::{Accept, Input, Interactive, Prompt, Result, Session, Step};
 
