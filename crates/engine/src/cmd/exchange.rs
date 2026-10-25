@@ -18,7 +18,7 @@ use cadcraft_render::raster::{RasterOptions, View};
 use serde_json::{Value, json};
 
 use super::file::{base64_decode, base64_encode, io};
-use super::{CommandSpec, bad, point_value, resolve_alias, str_param};
+use super::{CommandSpec, bad, point_value, str_param};
 
 use crate::{EngineError, Result, Session};
 
@@ -558,7 +558,10 @@ mod tests {
     use cadcraft_geom::Vec3;
 
     use super::super::file::{IoHooks, set_io};
-    use super::{CommandSpec, bad, point_value, resolve_alias, str_param};
+
+    use super::super::resolve_alias;
+    use super::*;
+    use serde_json::json;
 
     static DELIVERED: std::sync::Mutex<Vec<(String, String, usize)>> = std::sync::Mutex::new(Vec::new());
 

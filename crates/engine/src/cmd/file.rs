@@ -721,7 +721,8 @@ mod tests {
 
 #[cfg(test)]
 mod pr193_tests {
-    use super::{CommandSpec, EngineError, Interactive, bad, bool_or, ok, str_param};
+    use super::*;
+    use crate::Session;
 
     #[test]
     fn failed_store_keeps_unsaved_changes_and_delivered_save_clears_them() {
