@@ -10,7 +10,7 @@ use cadcraft_geom::{Bounds2, PolyVertex, Polyline, Vec2, point_in_polygon};
 use serde_json::{Value, json};
 
 use super::helpers::lwpoly;
-use super::{CommandSpec, bad, bool_or, f64_or, point_param, points_param, size_param, str_param, targets};
+use super::*;
 
 use crate::{Accept, EngineError, Input, Interactive, Picker, Prompt, Result, Session, Step};
 
@@ -19,6 +19,7 @@ mod edit;
 mod pick;
 pub(crate) use assoc::update as refill_associative;
 pub use pick::{HatchPicks, PickMode};
+use super::{has_doc};
 
 pub fn specs() -> Vec<CommandSpec> {
     vec![
@@ -783,7 +784,7 @@ impl Interactive for BoundaryM {
 mod tests {
     use serde_json::json;
 
-    use super::{CommandSpec, bad, bool_or, f64_or, point_param, points_param, size_param, str_param, targets};
+    use super::*;
 
     /// The drawing's only hatch and its handle (hatches go to the back of the draw order, so not the last entity).
     fn only_hatch(s: &Session) -> (String, Hatch) {
